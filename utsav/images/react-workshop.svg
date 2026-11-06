@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="reactBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a1c29"/>
+      <stop offset="50%" stop-color="#132338"/>
+      <stop offset="100%" stop-color="#0a192f"/>
+    </linearGradient>
+    <linearGradient id="reactCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#61dafb"/>
+      <stop offset="100%" stop-color="#00b4d8"/>
+    </linearGradient>
+    <filter id="reactGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="400" fill="url(#reactBg)"/>
+
+  <!-- Subtle Hexagonal Tech Pattern -->
+  <g stroke="#61dafb" stroke-opacity="0.08" stroke-width="1.5" fill="none">
+    <polygon points="60,60 90,42 120,60 120,95 90,112 60,95"/>
+    <polygon points="150,60 180,42 210,60 210,95 180,112 150,95"/>
+    <polygon points="450,280 480,262 510,280 510,315 480,332 450,315"/>
+    <polygon points="500,60 530,42 560,60 560,95 530,112 500,95"/>
+  </g>
+
+  <!-- Left: Code Card Mockup -->
+  <g transform="translate(50, 75)">
+    <rect width="240" height="250" rx="12" fill="#1b2438" stroke="#334d6e" stroke-width="1.5"/>
+    <rect width="240" height="32" rx="12" fill="#111927"/>
+    <rect x="0" y="20" width="240" height="12" fill="#111927"/>
+    <circle cx="16" cy="16" r="4.5" fill="#ff5f56"/>
+    <circle cx="30" cy="16" r="4.5" fill="#ffbd2e"/>
+    <circle cx="44" cy="16" r="4.5" fill="#27c93f"/>
+    <text x="120" y="20" fill="#a0aec0" font-family="'DM Sans', monospace" font-size="10.5" font-weight="600" text-anchor="middle">App.jsx</text>
+
+    <!-- Code inside -->
+    <text x="16" y="60" fill="#61dafb" font-family="monospace" font-size="11.5" font-weight="bold">import </text>
+    <text x="65" y="60" fill="#ffffff" font-family="monospace" font-size="11.5">{ useState } </text>
+    <text x="145" y="60" fill="#61dafb" font-family="monospace" font-size="11.5">from </text>
+    <text x="180" y="60" fill="#98c379" font-family="monospace" font-size="11.5">'react'</text>
+
+    <text x="16" y="90" fill="#e5c07b" font-family="monospace" font-size="11.5">function </text>
+    <text x="75" y="90" fill="#61dafb" font-family="monospace" font-size="11.5">Workshop() {</text>
+
+    <text x="26" y="115" fill="#c678dd" font-family="monospace" font-size="11.5">const </text>
+    <text x="66" y="115" fill="#abb2bf" font-family="monospace" font-size="11.5">[skills, setSkills] =</text>
+    <text x="36" y="135" fill="#61dafb" font-family="monospace" font-size="11.5">useState('Beginner');</text>
+
+    <text x="26" y="165" fill="#c678dd" font-family="monospace" font-size="11.5">return (</text>
+    <text x="36" y="185" fill="#e06c75" font-family="monospace" font-size="11.5">&lt;<tspan fill="#61dafb">DevCard </tspan><tspan fill="#d19a66">level</tspan>=<tspan fill="#98c379">"PRO"</tspan>&gt;</text>
+    <text x="46" y="205" fill="#ffffff" font-family="monospace" font-size="11.5">Build First React App</text>
+    <text x="36" y="225" fill="#e06c75" font-family="monospace" font-size="11.5">&lt;/<tspan fill="#61dafb">DevCard</tspan>&gt;</text>
+    <text x="16" y="240" fill="#e5c07b" font-family="monospace" font-size="11.5">}</text>
+  </g>
+
+  <!-- Right: Giant Glowing React Logo -->
+  <g transform="translate(430, 200)">
+    <!-- Atom Nucleus -->
+    <circle cx="0" cy="0" r="18" fill="url(#reactCyan)" filter="url(#reactGlow)"/>
+
+    <!-- Orbital Ring 1 (Horizontal) -->
+    <ellipse cx="0" cy="0" rx="100" ry="38" fill="none" stroke="url(#reactCyan)" stroke-width="5" filter="url(#reactGlow)"/>
+    <!-- Orbital Ring 2 (Rotated 60 deg) -->
+    <ellipse cx="0" cy="0" rx="100" ry="38" fill="none" stroke="url(#reactCyan)" stroke-width="5" transform="rotate(60)" filter="url(#reactGlow)"/>
+    <!-- Orbital Ring 3 (Rotated 120 deg) -->
+    <ellipse cx="0" cy="0" rx="100" ry="38" fill="none" stroke="url(#reactCyan)" stroke-width="5" transform="rotate(120)" filter="url(#reactGlow)"/>
+    
+    <!-- Orbiting Electrons -->
+    <circle cx="95" cy="0" r="5" fill="#ffffff"/>
+    <circle cx="-47" cy="82" r="5" fill="#ffffff"/>
+    <circle cx="-47" cy="-82" r="5" fill="#ffffff"/>
+  </g>
+
+  <!-- Floating Badge -->
+  <g transform="translate(430, 345)">
+    <rect x="-85" y="-16" width="170" height="32" rx="16" fill="#61dafb"/>
+    <text x="0" y="5" fill="#0a192f" font-family="'Bricolage Grotesque', sans-serif" font-size="13" font-weight="800" text-anchor="middle">⚛️ HANDS-ON WORKSHOP</text>
+  </g>
+</svg>

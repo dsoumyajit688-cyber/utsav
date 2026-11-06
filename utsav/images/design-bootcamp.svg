@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="uiBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#181528"/>
+      <stop offset="50%" stop-color="#2a2247"/>
+      <stop offset="100%" stop-color="#1e1838"/>
+    </linearGradient>
+    <linearGradient id="penGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff7262"/>
+      <stop offset="50%" stop-color="#a259ff"/>
+      <stop offset="100%" stop-color="#1abcfe"/>
+    </linearGradient>
+    <filter id="uiShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="6" dy="10" stdDeviation="6" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="400" fill="url(#uiBg)"/>
+
+  <!-- Designer Grid / Dot Matrix Background -->
+  <g fill="#a259ff" opacity="0.15">
+    <circle cx="50" cy="50" r="2"/><circle cx="100" cy="50" r="2"/><circle cx="150" cy="50" r="2"/>
+    <circle cx="200" cy="50" r="2"/><circle cx="250" cy="50" r="2"/><circle cx="300" cy="50" r="2"/>
+    <circle cx="350" cy="50" r="2"/><circle cx="400" cy="50" r="2"/><circle cx="450" cy="50" r="2"/>
+    <circle cx="500" cy="50" r="2"/><circle cx="550" cy="50" r="2"/>
+
+    <circle cx="50" cy="100" r="2"/><circle cx="100" cy="100" r="2"/><circle cx="150" cy="100" r="2"/>
+    <circle cx="200" cy="100" r="2"/><circle cx="250" cy="100" r="2"/><circle cx="300" cy="100" r="2"/>
+    <circle cx="350" cy="100" r="2"/><circle cx="400" cy="100" r="2"/><circle cx="450" cy="100" r="2"/>
+    <circle cx="500" cy="100" r="2"/><circle cx="550" cy="100" r="2"/>
+
+    <circle cx="50" cy="150" r="2"/><circle cx="100" cy="150" r="2"/><circle cx="150" cy="150" r="2"/>
+    <circle cx="200" cy="150" r="2"/><circle cx="250" cy="150" r="2"/><circle cx="300" cy="150" r="2"/>
+    <circle cx="350" cy="150" r="2"/><circle cx="400" cy="150" r="2"/><circle cx="450" cy="150" r="2"/>
+    <circle cx="500" cy="150" r="2"/><circle cx="550" cy="150" r="2"/>
+
+    <circle cx="50" cy="200" r="2"/><circle cx="100" cy="200" r="2"/><circle cx="150" cy="200" r="2"/>
+    <circle cx="200" cy="200" r="2"/><circle cx="250" cy="200" r="2"/><circle cx="300" cy="200" r="2"/>
+    <circle cx="350" cy="200" r="2"/><circle cx="400" cy="200" r="2"/><circle cx="450" cy="200" r="2"/>
+    <circle cx="500" cy="200" r="2"/><circle cx="550" cy="200" r="2"/>
+  </g>
+
+  <!-- Left: Mobile Screen Mockup Card -->
+  <g transform="translate(70, 60)" filter="url(#uiShadow)">
+    <rect width="170" height="260" rx="20" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+    <!-- Top Notch -->
+    <rect x="55" y="6" width="60" height="10" rx="5" fill="#1b1740"/>
+    <!-- App UI wireframe elements -->
+    <!-- Hero banner in app -->
+    <rect x="15" y="30" width="140" height="55" rx="10" fill="#4b3fe0"/>
+    <rect x="25" y="42" width="60" height="8" rx="4" fill="#ffffff" opacity="0.9"/>
+    <rect x="25" y="56" width="40" height="6" rx="3" fill="#ffb400"/>
+    <circle cx="130" cy="55" r="14" fill="#ffffff" opacity="0.3"/>
+
+    <!-- Grid cards in app -->
+    <rect x="15" y="100" width="65" height="65" rx="8" fill="#f1f5f9"/>
+    <rect x="22" y="140" width="45" height="6" rx="3" fill="#94a3b8"/>
+    <circle cx="47" cy="122" r="10" fill="#a259ff" opacity="0.7"/>
+
+    <rect x="90" y="100" width="65" height="65" rx="8" fill="#f1f5f9"/>
+    <rect x="97" y="140" width="45" height="6" rx="3" fill="#94a3b8"/>
+    <circle cx="122" cy="122" r="10" fill="#0acf83" opacity="0.7"/>
+
+    <!-- Bottom Action Button -->
+    <rect x="15" y="180" width="140" height="32" rx="16" fill="#1abcfe"/>
+    <rect x="50" y="192" width="70" height="8" rx="4" fill="#ffffff"/>
+
+    <!-- Bottom Navigation Bar -->
+    <line x1="15" y1="228" x2="155" y2="228" stroke="#e2e8f0" stroke-width="1"/>
+    <circle cx="40" cy="242" r="6" fill="#4b3fe0"/>
+    <circle cx="85" cy="242" r="6" fill="#cbd5e1"/>
+    <circle cx="130" cy="242" r="6" fill="#cbd5e1"/>
+  </g>
+
+  <!-- Right: Design Tools & Swatches Artboard -->
+  <g transform="translate(280, 65)">
+    <!-- Swatches Palette -->
+    <g transform="translate(0, 0)">
+      <rect width="250" height="52" rx="10" fill="#241e3d" stroke="#3d3561"/>
+      <circle cx="32" cy="26" r="14" fill="#f24e1e"/>
+      <circle cx="74" cy="26" r="14" fill="#ff7262"/>
+      <circle cx="116" cy="26" r="14" fill="#a259ff"/>
+      <circle cx="158" cy="26" r="14" fill="#1abcfe"/>
+      <circle cx="200" cy="26" r="14" fill="#0acf83"/>
+    </g>
+
+    <!-- Vector Bezier Curve Illustration -->
+    <g transform="translate(0, 75)">
+      <path d="M 10 90 C 60 10, 160 140, 240 40" fill="none" stroke="#ffb400" stroke-width="4"/>
+      <!-- Control lines -->
+      <line x1="10" y1="90" x2="60" y2="10" stroke="#a259ff" stroke-width="1.5" stroke-dasharray="3 3"/>
+      <line x1="240" y1="40" x2="160" y2="140" stroke="#a259ff" stroke-width="1.5" stroke-dasharray="3 3"/>
+      <!-- Anchor points -->
+      <rect x="4" y="84" width="12" height="12" fill="#ffffff" stroke="#1b1740" stroke-width="2"/>
+      <rect x="234" y="34" width="12" height="12" fill="#ffffff" stroke="#1b1740" stroke-width="2"/>
+      <circle cx="60" cy="10" r="5" fill="#a259ff"/>
+      <circle cx="160" cy="140" r="5" fill="#a259ff"/>
+    </g>
+
+    <!-- Stylus / Pen Tool -->
+    <g transform="translate(190, 80) rotate(-45)">
+      <path d="M 0 0 L 15 15 L 10 50 L -10 50 L -15 15 Z" fill="url(#penGrad)"/>
+      <polygon points="0,0 -4,15 4,15" fill="#ffffff"/>
+      <line x1="0" y1="50" x2="0" y2="100" stroke="#94a3b8" stroke-width="8" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <!-- Tagline Banner -->
+  <g transform="translate(300, 350)">
+    <rect x="-105" y="-16" width="210" height="32" rx="16" fill="#a259ff"/>
+    <text x="0" y="5" fill="#ffffff" font-family="'Bricolage Grotesque', sans-serif" font-size="13" font-weight="800" text-anchor="middle">🎨 FIGMA • WIREFRAMES • UI/UX</text>
+  </g>
+</svg>

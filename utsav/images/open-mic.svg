@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="micBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2a0845"/>
+      <stop offset="50%" stop-color="#6441a5"/>
+      <stop offset="100%" stop-color="#fe8c00"/>
+    </linearGradient>
+    <linearGradient id="spotlight1" x1="0%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#ffea79" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#ffea79" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="spotlight2" x1="100%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#ff7eb3" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#ff7eb3" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="chromeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="40%" stop-color="#e0e0e0"/>
+      <stop offset="70%" stop-color="#9e9e9e"/>
+      <stop offset="100%" stop-color="#424242"/>
+    </linearGradient>
+    <filter id="micGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="400" fill="url(#micBg)"/>
+
+  <!-- Spotlights -->
+  <polygon points="50,0 220,380 340,380 200,0" fill="url(#spotlight1)"/>
+  <polygon points="550,0 380,380 260,380 400,0" fill="url(#spotlight2)"/>
+
+  <!-- Stage Floor Horizon -->
+  <ellipse cx="300" cy="380" rx="280" ry="40" fill="#1b1740" opacity="0.6"/>
+
+  <!-- Floating Music Notes and Sparkles -->
+  <g fill="#ffea79" opacity="0.8">
+    <!-- Note 1 -->
+    <path d="M120 140 c0 -15 15 -25 30 -20 l 0 45 c -5 -3 -12 -3 -18 0 c -8 4 -12 12 -8 18 c 4 6 13 6 20 2 c 6 -4 8 -11 8 -18 l 0 -35 c 10 3 15 10 15 15" transform="scale(0.8) translate(50, 40)"/>
+    <!-- Note 2 -->
+    <path d="M460 110 c0 -15 15 -25 30 -20 l 0 45 c -5 -3 -12 -3 -18 0 c -8 4 -12 12 -8 18 c 4 6 13 6 20 2 c 6 -4 8 -11 8 -18 l 0 -35" transform="scale(0.85) translate(80, 20)"/>
+    <!-- Sparkles -->
+    <circle cx="160" cy="80" r="3"/>
+    <circle cx="450" cy="70" r="4"/>
+    <circle cx="140" cy="240" r="2"/>
+    <circle cx="480" cy="210" r="3"/>
+    <circle cx="200" cy="110" r="2.5"/>
+  </g>
+
+  <!-- Sound Waves Aura -->
+  <g stroke="#ffffff" stroke-width="2" fill="none" opacity="0.25">
+    <circle cx="300" cy="180" r="60"/>
+    <circle cx="300" cy="180" r="95" stroke-dasharray="8 6"/>
+    <circle cx="300" cy="180" r="130"/>
+    <circle cx="300" cy="180" r="170" stroke-dasharray="4 8"/>
+  </g>
+
+  <!-- Vintage Microphone -->
+  <g transform="translate(300, 180)">
+    <!-- Stand Rod -->
+    <rect x="-6" y="55" width="12" height="150" fill="url(#chromeGrad)" rx="3"/>
+    <!-- Base -->
+    <ellipse cx="0" cy="205" rx="55" ry="14" fill="#212121"/>
+    <ellipse cx="0" cy="202" rx="45" ry="10" fill="url(#chromeGrad)"/>
+    <!-- Clutch knob -->
+    <rect x="-14" y="90" width="28" height="10" rx="3" fill="#ffb400"/>
+
+    <!-- Mic U-Mount Pivot -->
+    <path d="M -36 -10 C -36 50, 36 50, 36 -10" fill="none" stroke="url(#chromeGrad)" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="-36" cy="-10" r="6" fill="#ffb400"/>
+    <circle cx="36" cy="-10" r="6" fill="#ffb400"/>
+
+    <!-- Vintage Capsule -->
+    <rect x="-26" y="-70" width="52" height="85" rx="26" fill="url(#chromeGrad)" filter="url(#micGlow)"/>
+    <!-- Capsule Ribs / Grill -->
+    <rect x="-22" y="-64" width="44" height="73" rx="22" fill="#1b1740"/>
+    <g stroke="url(#chromeGrad)" stroke-width="2.5">
+      <line x1="-20" y1="-50" x2="20" y2="-50"/>
+      <line x1="-22" y1="-38" x2="22" y2="-38"/>
+      <line x1="-22" y1="-26" x2="22" y2="-26"/>
+      <line x1="-22" y1="-14" x2="22" y2="-14"/>
+      <line x1="-20" y1="-2" x2="20" y2="-2"/>
+      <!-- Vertical Split -->
+      <line x1="0" y1="-64" x2="0" y2="9" stroke-width="4" stroke="#ffb400"/>
+    </g>
+  </g>
+
+  <!-- Tagline Banner -->
+  <g transform="translate(300, 345)">
+    <rect x="-90" y="-16" width="180" height="32" rx="16" fill="#ffb400"/>
+    <text x="0" y="5" fill="#1b1740" font-family="'Bricolage Grotesque', sans-serif" font-size="13" font-weight="800" text-anchor="middle">🎙️ POETRY • COMEDY • MUSIC</text>
+  </g>
+</svg>

@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="hackGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f0c29"/>
+      <stop offset="50%" stop-color="#302b63"/>
+      <stop offset="100%" stop-color="#24243e"/>
+    </linearGradient>
+    <linearGradient id="neonCyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe"/>
+      <stop offset="100%" stop-color="#4facfe"/>
+    </linearGradient>
+    <linearGradient id="neonOrange" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffb400"/>
+      <stop offset="100%" stop-color="#ff4b4b"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+  <!-- Background -->
+  <rect width="600" height="400" fill="url(#hackGrad)"/>
+  
+  <!-- Subtle Circuit Grid -->
+  <g stroke="#ffffff" stroke-opacity="0.07" stroke-width="1.5">
+    <line x1="0" y1="50" x2="600" y2="50"/>
+    <line x1="0" y1="120" x2="600" y2="120"/>
+    <line x1="0" y1="200" x2="600" y2="200"/>
+    <line x1="0" y1="280" x2="600" y2="280"/>
+    <line x1="0" y1="350" x2="600" y2="350"/>
+    <line x1="80" y1="0" x2="80" y2="400"/>
+    <line x1="180" y1="0" x2="180" y2="400"/>
+    <line x1="300" y1="0" x2="300" y2="400"/>
+    <line x1="420" y1="0" x2="420" y2="400"/>
+    <line x1="520" y1="0" x2="520" y2="400"/>
+  </g>
+
+  <!-- Floating Glow Orbs -->
+  <circle cx="120" cy="90" r="70" fill="#4facfe" opacity="0.15" filter="url(#glow)"/>
+  <circle cx="480" cy="300" r="90" fill="#ff4b4b" opacity="0.12" filter="url(#glow)"/>
+
+  <!-- Code Editor Window -->
+  <g transform="translate(100, 60)">
+    <!-- Window Frame -->
+    <rect width="400" height="260" rx="14" fill="#14132b" stroke="#4b3fe0" stroke-width="2"/>
+    <!-- Title Bar -->
+    <path d="M0 14 C0 6.27 6.27 0 14 0 L386 0 C393.73 0 400 6.27 400 14 L400 38 L0 38 Z" fill="#1e1c3f"/>
+    <circle cx="22" cy="19" r="6" fill="#ff5f56"/>
+    <circle cx="42" cy="19" r="6" fill="#ffbd2e"/>
+    <circle cx="62" cy="19" r="6" fill="#27c93f"/>
+    <text x="200" y="24" fill="#8f85ff" font-family="'DM Sans', monospace" font-size="12" font-weight="600" text-anchor="middle">hackathon_main.py</text>
+
+    <!-- Code Lines / Graphics -->
+    <!-- Line numbers -->
+    <text x="24" y="70" fill="#5c578a" font-family="monospace" font-size="13">01</text>
+    <text x="24" y="98" fill="#5c578a" font-family="monospace" font-size="13">02</text>
+    <text x="24" y="126" fill="#5c578a" font-family="monospace" font-size="13">03</text>
+    <text x="24" y="154" fill="#5c578a" font-family="monospace" font-size="13">04</text>
+    <text x="24" y="182" fill="#5c578a" font-family="monospace" font-size="13">05</text>
+    <text x="24" y="210" fill="#5c578a" font-family="monospace" font-size="13">06</text>
+
+    <!-- Syntax Highlighted Lines -->
+    <text x="60" y="70" fill="#ff7a93" font-family="monospace" font-size="13" font-weight="700">import </text>
+    <text x="115" y="70" fill="#4fd1a1" font-family="monospace" font-size="13">innovation, teamwork</text>
+
+    <text x="60" y="98" fill="#8f85ff" font-family="monospace" font-size="13" font-weight="700">def </text>
+    <text x="95" y="98" fill="#ffb400" font-family="monospace" font-size="13">build_project</text>
+    <text x="200" y="98" fill="#ffffff" font-family="monospace" font-size="13">(hours=24):</text>
+
+    <text x="80" y="126" fill="#00f2fe" font-family="monospace" font-size="13">status = </text>
+    <text x="155" y="126" fill="#4fd1a1" font-family="monospace" font-size="13">"SHIPPED &amp; DEPLOYED"</text>
+
+    <text x="80" y="154" fill="#ff7a93" font-family="monospace" font-size="13" font-weight="700">return </text>
+    <text x="135" y="154" fill="#ffffff" font-family="monospace" font-size="13">FirstPrize(trophy=True)</text>
+
+    <!-- Terminal Output Box -->
+    <rect x="50" y="175" width="310" height="60" rx="8" fill="#0d0c1d" stroke="#322e63"/>
+    <text x="65" y="196" fill="#27c93f" font-family="monospace" font-size="12" font-weight="600">&gt; npm run hack -- --sprint=24h</text>
+    <text x="65" y="218" fill="#ffb400" font-family="monospace" font-size="12">[BUILD SUCCESSFUL] Ready to pitch! 🚀</text>
+  </g>
+
+  <!-- Big Glowing Brackets -->
+  <text x="50" y="220" fill="url(#neonCyan)" font-family="'Bricolage Grotesque', sans-serif" font-size="80" font-weight="800" opacity="0.3">&lt;</text>
+  <text x="510" y="220" fill="url(#neonCyan)" font-family="'Bricolage Grotesque', sans-serif" font-size="80" font-weight="800" opacity="0.3">&gt;</text>
+
+  <!-- Floating Badge -->
+  <g transform="translate(420, 290)">
+    <rect width="130" height="38" rx="19" fill="#ffb400" filter="url(#glow)" opacity="0.9"/>
+    <text x="65" y="24" fill="#1b1740" font-family="'Bricolage Grotesque', sans-serif" font-size="14" font-weight="800" text-anchor="middle">⚡ 24H SPRINT</text>
+  </g>
+</svg>

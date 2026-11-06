@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="chessBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111827"/>
+      <stop offset="50%" stop-color="#1f2937"/>
+      <stop offset="100%" stop-color="#374151"/>
+    </linearGradient>
+    <linearGradient id="goldPiece" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fde047"/>
+      <stop offset="50%" stop-color="#eab308"/>
+      <stop offset="100%" stop-color="#ca8a04"/>
+    </linearGradient>
+    <linearGradient id="darkPiece" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#475569"/>
+      <stop offset="50%" stop-color="#334155"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <filter id="chessShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="6" dy="12" stdDeviation="6" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="400" fill="url(#chessBg)"/>
+
+  <!-- Perspective Checkered Board Grid -->
+  <g transform="translate(300, 260) skewX(-20) scale(1, 0.45)" opacity="0.65">
+    <rect x="-240" y="-120" width="480" height="240" fill="#cbd5e1" stroke="#94a3b8" stroke-width="4"/>
+    <!-- 8x4 Grid tiles -->
+    <!-- Row 1 -->
+    <rect x="-240" y="-120" width="60" height="60" fill="#334155"/><rect x="-120" y="-120" width="60" height="60" fill="#334155"/>
+    <rect x="0" y="-120" width="60" height="60" fill="#334155"/><rect x="120" y="-120" width="60" height="60" fill="#334155"/>
+    <!-- Row 2 -->
+    <rect x="-180" y="-60" width="60" height="60" fill="#334155"/><rect x="-60" y="-60" width="60" height="60" fill="#334155"/>
+    <rect x="60" y="-60" width="60" height="60" fill="#334155"/><rect x="180" y="-60" width="60" height="60" fill="#334155"/>
+    <!-- Row 3 -->
+    <rect x="-240" y="0" width="60" height="60" fill="#334155"/><rect x="-120" y="0" width="60" height="60" fill="#334155"/>
+    <rect x="0" y="0" width="60" height="60" fill="#334155"/><rect x="120" y="0" width="60" height="60" fill="#334155"/>
+    <!-- Row 4 -->
+    <rect x="-180" y="60" width="60" height="60" fill="#334155"/><rect x="-60" y="60" width="60" height="60" fill="#334155"/>
+    <rect x="60" y="60" width="60" height="60" fill="#334155"/><rect x="180" y="60" width="60" height="60" fill="#334155"/>
+  </g>
+
+  <!-- Chess Clock Silhouette (Top Right) -->
+  <g transform="translate(440, 50)" opacity="0.8">
+    <rect width="110" height="65" rx="8" fill="#1e293b" stroke="#ca8a04" stroke-width="1.5"/>
+    <rect x="15" y="-8" width="30" height="8" rx="2" fill="#ca8a04"/>
+    <rect x="65" y="-12" width="30" height="12" rx="2" fill="#64748b"/>
+    <!-- Clock faces -->
+    <circle cx="35" cy="35" r="18" fill="#ffffff"/>
+    <circle cx="75" cy="35" r="18" fill="#ffffff"/>
+    <line x1="35" y1="35" x2="35" y2="24" stroke="#0f172a" stroke-width="2"/>
+    <line x1="35" y1="35" x2="42" y2="35" stroke="#0f172a" stroke-width="1.5"/>
+    <line x1="75" y1="35" x2="70" y2="26" stroke="#0f172a" stroke-width="2"/>
+  </g>
+
+  <!-- Left: Black Knight Piece (Horse) -->
+  <g transform="translate(180, 110)" filter="url(#chessShadow)">
+    <!-- Base -->
+    <ellipse cx="40" cy="170" rx="42" ry="14" fill="#0f172a"/>
+    <rect x="10" y="152" width="60" height="15" rx="3" fill="url(#darkPiece)"/>
+    <!-- Knight Body & Mane Silhouette -->
+    <path d="M 18 152 C 15 130, 25 105, 30 90 C 22 92, 12 85, 14 70 C 16 55, 32 40, 50 35 C 55 35, 58 28, 54 22 C 65 25, 75 35, 76 48 C 82 52, 90 65, 80 82 C 72 96, 68 115, 68 152 Z" fill="url(#darkPiece)"/>
+    <!-- Eye & Details -->
+    <circle cx="36" cy="65" r="3.5" fill="#ca8a04"/>
+    <path d="M 24 82 C 30 78, 38 78, 44 82" stroke="#64748b" stroke-width="2" fill="none"/>
+  </g>
+
+  <!-- Center-Right: Golden King Piece -->
+  <g transform="translate(310, 65)" filter="url(#chessShadow)">
+    <!-- King Cross on Top -->
+    <rect x="46" y="8" width="8" height="24" rx="2" fill="#ffffff"/>
+    <rect x="38" y="14" width="24" height="8" rx="2" fill="#ffffff"/>
+    <!-- Crown Finial -->
+    <circle cx="50" cy="38" r="16" fill="url(#goldPiece)"/>
+    <!-- Crown Head -->
+    <path d="M 28 50 C 25 70, 75 70, 72 50 C 72 42, 28 42, 28 50 Z" fill="url(#goldPiece)"/>
+    <!-- Neck -->
+    <path d="M 36 65 L 64 65 L 68 85 L 32 85 Z" fill="url(#goldPiece)"/>
+    <ellipse cx="50" cy="85" rx="22" ry="6" fill="#fde047"/>
+    <!-- Body Column -->
+    <path d="M 34 88 C 32 120, 22 170, 16 200 L 84 200 C 78 170, 68 120, 66 88 Z" fill="url(#goldPiece)"/>
+    <!-- Body Ribs -->
+    <ellipse cx="50" cy="140" rx="26" ry="6" fill="#fde047" opacity="0.6"/>
+    <!-- Base Pedestal -->
+    <rect x="10" y="200" width="80" height="15" rx="4" fill="url(#goldPiece)"/>
+    <ellipse cx="50" cy="215" rx="48" ry="14" fill="#ca8a04"/>
+    <ellipse cx="50" cy="212" rx="42" ry="10" fill="#fde047"/>
+  </g>
+
+  <!-- Tactical Move Arrow -->
+  <g stroke="#fde047" stroke-width="3" fill="none" opacity="0.8">
+    <path d="M 210 240 Q 260 210, 300 235" stroke-dasharray="6 4"/>
+    <polygon points="300,230 310,238 298,242" fill="#fde047"/>
+  </g>
+
+  <!-- Tagline Banner -->
+  <g transform="translate(300, 350)">
+    <rect x="-105" y="-16" width="210" height="32" rx="16" fill="#ca8a04"/>
+    <text x="0" y="5" fill="#111827" font-family="'Bricolage Grotesque', sans-serif" font-size="13" font-weight="800" text-anchor="middle">♟️ SWISS RAPID TOURNAMENT</text>
+  </g>
+</svg>

@@ -22,9 +22,9 @@ Registrations are validated using JavaScript and stored in browser `localStorage
 
 ## 3. Technologies Used
 
-- HTML5
-- CSS3
-- Vanilla JavaScript (ES6+)
+- HTML
+- CSS
+- JavaScript
 
 ## 4. Project Structure
 

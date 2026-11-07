@@ -53,5 +53,5 @@ Open `http://localhost:8000`.
 ## 7. Author
 
 - **Name:** [Soumyajit Das]
-- **GitHub:** [https://github.com/dsoumyajit688-cyber]
+- **GitHub:** [https://github.com/dsoumyajit688-cyber/utsav]
 - **Course:** College Web Designing Assignment

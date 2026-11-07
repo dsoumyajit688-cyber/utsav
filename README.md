@@ -48,10 +48,10 @@ utsav/
 Open `http://localhost:8000`.
 
 ## 6. Project Links
-- **Live Demo:** [utsav-neon.vercel.app]
+- **Live Demo:** utsav-neon.vercel.app
 
 ## 7. Author
 
-- **Name:** [Soumyajit Das]
-- **GitHub:** [https://github.com/dsoumyajit688-cyber/utsav]
+- **Name:** Soumyajit Das
+- **GitHub:** https://github.com/dsoumyajit688-cyber/utsav
 - **Course:** College Web Designing Assignment

@@ -45,13 +45,6 @@ utsav/
 1. Download or clone the repository.
 2. Open the project folder.
 3. Run `index.html` in a browser.
-
-Alternatively, use:
-
-```bash
-python -m http.server 8000
-```
-
 Open `http://localhost:8000`.
 
 ## 6. Project Links
@@ -59,6 +52,6 @@ Open `http://localhost:8000`.
 
 ## 7. Author
 
-- **Name:** [Your Name]
-- **GitHub:** [Your Username]
+- **Name:** [Soumyajit Das]
+- **GitHub:** [https://github.com/dsoumyajit688-cyber]
 - **Course:** College Web Designing Assignment

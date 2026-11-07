@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Utsav | Discover and Register for Campus Events</title>
+<meta name="description" content="Browse upcoming tech, cultural, sports and workshop events and register in under a minute.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="nav">
+  <div class="nav-brand">
+    <a href="#top" class="logo">Utsav</a>
+    <span class="logo-sub">Campus Events</span>
+  </div>
+  <nav id="navMenu" class="nav-links" aria-label="Main navigation">
+    <a href="#featured" class="nav-link">Featured</a>
+    <a href="#events" class="nav-link">Events</a>
+    <a href="#registrations" class="nav-link">My registrations</a>
+  </nav>
+  <div class="nav-actions">
+    <button id="themeBtn" class="icon-btn" aria-label="Toggle dark mode" title="Toggle dark/light mode">🌙</button>
+    <button id="menuToggle" class="icon-btn menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
+      <span class="menu-bar"></span>
+      <span class="menu-bar"></span>
+      <span class="menu-bar"></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Find your next event. Register in a minute.</h1>
+      <p>Hackathons, concerts, workshops and tournaments happening around you, all in one place.</p>
+      <div class="hero-cta">
+        <a class="btn" href="#events">Browse events</a>
+        <a class="btn ghost" href="#featured">View featured</a>
+      </div>
+    </div>
+    <aside class="next" aria-live="polite">
+      <p class="next-label">Next up</p>
+      <h2 id="nextTitle">Loading next event...</h2>
+      <div class="timer" id="timer"></div>
+      <button class="btn ghost" id="nextBtn">View details</button>
+    </aside>
+  </section>
+
+  <!-- Featured Events Section -->
+  <section id="featured" class="section featured-section">
+    <div class="section-head">
+      <div>
+        <span class="badge-featured">⭐ Highlights</span>
+        <h2>Featured Events</h2>
+      </div>
+      <p class="muted">Handpicked premier competitions, cultural showcases, and signature workshops you shouldn't miss.</p>
+    </div>
+    <div id="featuredGrid" class="featured-grid"></div>
+  </section>
+
+  <!-- Upcoming Events Section with Search & Filtering -->
+  <section id="events" class="section">
+    <div class="section-head">
+      <div>
+        <h2>Upcoming events</h2>
+        <p class="muted">Filter by category or search by keywords to find your preferred event.</p>
+      </div>
+    </div>
+    <div class="tools">
+      <input id="search" type="search" placeholder="Search by name, venue or keyword..." aria-label="Search events">
+      <div id="chips" class="chips" role="group" aria-label="Filter by category"></div>
+    </div>
+    <div id="grid" class="grid"></div>
+    <p id="empty" class="empty" hidden>No events match your search. Try a different keyword or category.</p>
+  </section>
+
+  <!-- My Registrations Section -->
+  <section id="registrations" class="section registrations-section">
+    <div class="section-head">
+      <div>
+        <h2>My registrations</h2>
+        <p class="muted">Saved securely in this browser using Local Storage.</p>
+      </div>
+      <div id="regSummary" class="reg-summary"></div>
+    </div>
+    <div id="regList" class="reg-list" role="region" aria-live="polite"></div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-content">
+    <p class="footer-brand"><strong>Utsav</strong> • Discover &amp; Register for Campus Events</p>
+    <div class="footer-right">
+      <p class="footer-dev">Developed by <strong>Soumyajit Das</strong></p>
+      <p class="footer-tech">HTML5 • CSS3 • JavaScript | &copy; 2026 Utsav</p>
+    </div>
+  </div>
+</footer>
+
+<div id="modal" class="modal" hidden>
+  <div class="sheet" role="dialog" aria-modal="true" aria-labelledby="mTitle">
+    <button class="close" id="closeBtn" aria-label="Close dialog">✕</button>
+    <div id="mImg" class="m-img"></div>
+    <div class="m-body">
+      <span id="mCat" class="tag"></span>
+      <h2 id="mTitle"></h2>
+      <p id="mMeta" class="muted"></p>
+      <p id="mDesc"></p>
+      <form id="form" novalidate>
+        <h3>Register for this event</h3>
+        <label>Full name<input name="name" autocomplete="name" required><small></small></label>
+        <label>Email<input name="email" type="email" autocomplete="email" required><small></small></label>
+        <label>Phone number<input name="phone" type="tel" inputmode="numeric" maxlength="10" autocomplete="tel" required><small></small></label>
+        <label>Selected event<input name="event" readonly></label>
+        <button class="btn" type="submit">Confirm registration</button>
+      </form>
+      <div id="done" class="done" hidden></div>
+    </div>
+  </div>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

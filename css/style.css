@@ -715,13 +715,36 @@ a {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 1.2rem;
   font-size: 0.92rem;
   color: var(--muted);
 }
 
 .footer-brand strong {
   color: var(--accent);
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.25rem;
+  text-align: right;
+}
+
+.footer-dev {
+  color: var(--ink);
+  font-weight: 500;
+}
+
+.footer-dev strong {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.footer-tech {
+  color: var(--muted);
+  font-size: 0.88rem;
 }
 
 /* ==================== Modal Details & Registration ==================== */
@@ -937,6 +960,18 @@ small {
   .section-head {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 0.9rem;
+  }
+
+  .footer-right {
+    align-items: center;
+    text-align: center;
   }
 }
 
